@@ -41,7 +41,7 @@ function init() {
         console.log(response);
         // create output folder
         // https://nodejs.dev/en/learn/working-with-folders-in-nodejs/
-        /*const folderName = 'output';
+        const folderName = 'output';
         try {
             if (!fs.existsSync(folderName)) {
               fs.mkdirSync(folderName);
@@ -49,7 +49,7 @@ function init() {
         } catch (err) {
             console.error(err);
         }  
-        writeToFile(`./output/logo.svg`, generateSVG(response));*/
+        writeToFile(`./output/logo.svg`, generateSVG(response));
     });
 }
 

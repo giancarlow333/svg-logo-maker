@@ -14,13 +14,13 @@ Once you have Node.js installed on your computer, please follow these steps:
 
 ## Usage
 
-As noted above, run the app with the command ``node index.js``.  The typical program flow is shown a video that is available [in the example folder](), and [on GoogleDrive]().
+As noted above, run the app with the command ``node index.js``.  The typical program flow is shown a video that is available [in the example folder](./examples/SVGLogoMakerDemo.mp4), and [on GoogleDrive](https://drive.google.com/file/d/1WvfbBbNekojv3aW538NoufacCq6ws99S/view?usp=drive_link).
 
 Here is a screenshot showing a terminal in which the program is running:
 
-![A terminal in which the program was invoked with the command node index.js]()
+![A terminal in which the program was invoked with the command node index.js](./examples/Screenshot.png)
 
-A sample output file can be found [here]().
+Sample output files can be found [here](./examples/).
 
 ## Sources
 

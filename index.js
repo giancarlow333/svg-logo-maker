@@ -31,14 +31,13 @@ const questions = [
 // Function to write SVG file
 function writeToFile(fileName, svg) {
     fs.writeFile(fileName, svg, function(error) {
-        error ? console.log(error) : console.log("Success!");
+        error ? console.log(error) : console.log("Generated logo.svg!");
     });
 }
 
 // Function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) => {
-        console.log(response);
         // create output folder
         const folderName = 'output';
         try {

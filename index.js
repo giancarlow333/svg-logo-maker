@@ -40,7 +40,6 @@ function init() {
     inquirer.prompt(questions).then((response) => {
         console.log(response);
         // create output folder
-        // https://nodejs.dev/en/learn/working-with-folders-in-nodejs/
         const folderName = 'output';
         try {
             if (!fs.existsSync(folderName)) {
@@ -48,7 +47,11 @@ function init() {
             }
         } catch (err) {
             console.error(err);
-        }  
+        }
+        // validate the text
+        if (response.logoText.length > 3) {
+            throw new Error("Logo link must be three characters or less");
+        }
         writeToFile(`./output/logo.svg`, generateSVG(response));
     });
 }

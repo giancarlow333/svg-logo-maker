@@ -10,7 +10,7 @@ function generateSVG (data) {
         logo = `<rect x="100" y="50" width="100" height="100" fill="${data.logoColor}" />`;
     }
     else if (data.logoShape == "triangle") {
-        // triangle code
+        logo = `<polygon points="150,50 207.735,150 92.265,150" fill="${data.logoColor}"/>`;//<polygon points="50 15, 100 100, 0 100"/>`
     }
     else {
         // throw error
